@@ -36,3 +36,9 @@ export function completeToDos(id) {
     findTodo.completed = true;
     setTodos(toDos);
 }
+export function createUser(formData) {
+    const newUser = { name:formData.get('name'), 
+        password:formData.get('password'), 
+        
+    };
+    return newUser;}

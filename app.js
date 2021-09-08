@@ -1,8 +1,14 @@
-// import functions and grab DOM elements
+import { createUser, setUser } from './utils.js';
 
 // initialize global state
+const formEl = document.getElementById('sign-up');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+//submit event listener
+formEl.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(formEl);
+    const user = createUser(formData);
+    setUser(user);
+    window.location = './Todo/index.html';
+});
