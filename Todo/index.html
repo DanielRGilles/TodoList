@@ -9,13 +9,31 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/home.css">
-    <title>Signup</title>
+    <title>To-Dos</title>
 </head>
 
 <body>
-    <header>  
+    <header class='title'> To-Do get Things Done!
+        <a id="link-login" href="../Login/index.html">Login Page</a> <button class='add-btn' id="clear-task">Remove all
+            To-Dos</button>
     </header>
-    <main>     
+
+    <main class="main-todo">
+        <form class='add-todo-item' id="add-items"><input class='add-item-input' type="text" name="todo" value="" required><button
+                class='add-btn'>Add Item</button></form>
+
+        <div class="cnt-div">
+            <div></div>
+            <div class="ul-cnt">
+                <div></div>
+                <div class="ul-layer">
+                    <div class="font-title">To-Do</div>
+                    <ol class='list-items' id='append-here'></ol>
+                </div>
+                <div></div>
+            </div>
+            <div></div>
+        </div>
     </main>
     <footer>
     </footer>
