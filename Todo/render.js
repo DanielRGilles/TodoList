@@ -1,6 +1,6 @@
 import { getTodos } from '../utils.js';
 const toDos = document.getElementById('append-here');
-const Todos = getTodos(); 
+
 
 export function renderTodos(arrayItem) {
     const li = document.createElement('li');
@@ -12,6 +12,7 @@ export function renderTodos(arrayItem) {
     return li;
 }
 export function callRender() {
+    const Todos = getTodos(); 
     for (let Todo of Todos) {
         const liItem = renderTodos(Todo);
         toDos.append(liItem);
