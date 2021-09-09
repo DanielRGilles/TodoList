@@ -1,9 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Bad+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 header {
     font-size: 2rem;
-    background-color: rgba(70, 20, 106, .9);
+    background-color: rgba(100, 150, 206, 1);
     color: ivory;
 }
 header > a {
@@ -11,8 +11,8 @@ header > a {
 }
 main, body {
     margin-top: 35px;
-    background-color: rgba(6,3,81, .2);
     font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(200, 200, 200);
 }
 .main-todo {
     display: flex;
@@ -65,8 +65,10 @@ label {
 }
 .add-item-input {
     position: fixed;
-    right: 10%;
+    right: 7%;
     top: 5.5%;
+    width: 450px;
+    border: ridge 3px ivory;
 }
 .add-btn:hover {
     transition: ease-in-out 1000ms ;
@@ -74,11 +76,14 @@ label {
     color: blanchedalmond;
 }
 .todos {
-    margin: 5px 0px 0px 20px;
+    margin: 5px 0px 0px 0px;
     display: grid;
     background-color: white;
     border: inset 1px;
     cursor: pointer;
+    width: 100%;
+    font-family: 'Amita', cursive;
+    font-size: 1.5rem;
 }
 .add-todo-item {
     position: fixed;
@@ -88,7 +93,8 @@ label {
 ol > li {
     height: fit-content;
     max-width: 100%;
-    min-width: 50%;
+    width: 500px;
+    list-style: number;
     
 }
 
@@ -115,10 +121,12 @@ ol > li {
     text-align: center;
 }
 .font-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 0;
     text-decoration: underline;
+    margin-bottom: 5%;
+    font-family: 'Bad Script', cursive;
 }
 #link-login {
     position: fixed;
